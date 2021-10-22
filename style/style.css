@@ -1,0 +1,147 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family:-apple-system, 'Helvetica Neue', sans-serif;
+   color:white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+header nav a.active {
+    color:#fff;
+}
+
+.svg-icon-netflix-logo {
+    fill: #e50914;
+    line-height: normal;
+
+    margin-left: 5px;
+    width: 120px;
+}
+
+/*filme principal*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.filme-principal{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.btn_info:hover{
+    background-color:white;
+    color:black;
+}
+
+.btn_watch:hover {
+    background: var(--vermelho);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+.tittle-section {
+    padding: 12px 8px;
+}
